@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+/* reusable module components */
+
+ul.check-on-white {
+    padding-left: 0;
+    li {
+        background: url('/img/icon/icon-checkWhite.png') no-repeat left 2px;
+        display: block;
+        padding-left: 5.5rem;
+        margin-bottom: 1rem;
+        min-height: 3.7rem;
+        text-align: left;
+        font-size: 1.5rem;
+        font-weight: 400;
+        list-style: none;
+    }
+}
+.column-padding-right {
+    padding-right: 4.5rem;
+    padding-left: 0;
+}
+.bg-grey {
+    background-color: $secondary-color-10;
+}
+
+@include media-breakpoint-down(sm) {
+    .column-padding-right {
+        padding: 0 2.5rem;
+    }
+}

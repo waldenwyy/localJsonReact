@@ -1,0 +1,76 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+
+.cta-transWhite {
+    background-color: transparent;
+    color: $default-color-1;
+    border: 0.1rem solid $default-color-1;
+
+    &:hover {
+        background-color: $default-color-1;
+        color: $text-color-alt;
+    }
+}
+
+.cta-transBlue {
+    background-color: transparent;
+    color: $text-color-alt;
+    border: 0.1rem solid $primary-color-2;
+
+    &:hover {
+        background-color: $primary-color-2;
+        color: $default-color-1;
+    }
+}
+
+.cta-yellow {
+    background-color: $secondary-color-4;
+    color: $text-color;
+
+    &:hover {
+        background-color: $secondary-color-8;
+        color: $text-color;
+    }
+}
+
+.cta-blue {
+    background-color: $primary-color-2;
+    color: $default-color-1;
+
+    &:hover {
+        background-color: $text-color-hover;
+        color: $default-color-1;
+    }
+}
+
+.sg-cta-transBlue {
+    background-color: $primary-color-2;
+    border: 0.1rem solid $primary-color-2;
+    color: $default-color-1;
+    &:hover {
+        background-color: transparent;
+        color: $text-color;
+    }
+}
+
+.sg-cta-transRed {
+    background-color: $primary-color-1;
+    border: 0.1rem solid $primary-color-1;
+    color: $default-color-1;
+    &:hover {
+        background-color: transparent;
+        color: $text-color;
+    }
+}
+
+.sg-cta-transCyan {
+    background-color: $secondary-color-1;
+    border: 0.1rem solid $secondary-color-1;
+    color: $default-color-1;
+    &:hover {
+        background-color: transparent;
+        color: $text-color;
+    }
+}

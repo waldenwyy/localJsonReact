@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hero of the site/application.
+// -----------------------------------------------------------------------------
+
+header {
+    text-align: center;
+    background-color: $default-color-1;
+}
+.divider-edge {
+    width: 100%;
+    height: 12.5rem;
+    margin-top: -0.1rem;
+    position: relative;
+    z-index: 1;
+    float: left;
+    -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    background-color: inherit;
+}
+
+.mod-hero-bg {
+    background-image: url( '/img/hero/hero-promises-delivered.jpg' );
+    background-size: cover;
+    background-position: center top; 
+    width: 100%;
+    height: 65vh;
+    min-height: 35vh;
+}
+.mod-hero-top {
+    a[role="button"] {
+        margin: 3.5rem 1.5rem;        
+    }
+    p {
+        margin-top: 1rem;
+        a {
+            color: $text-color-alt;
+            &:hover {
+                color: $text-color-hover;
+                text-decoration: none;
+            }
+        }
+        i {
+            padding-right: 1rem;
+        }
+    }
+}
+.mod-hero-bottom {
+    min-height: 35vh;
+    color: $text-color-light;
+    &.type-hero-bgimg {
+        background-image: url( '/img/hero/hero-shipping-canada.png' );
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    &.type-hero-bgcolor {
+        background-color: $primary-color-2;
+    }
+    .container {
+        text-align: left;
+        padding: 20rem 4rem 6rem 4rem;
+        a[role=button] {
+            margin-left: 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .mod-hero-bg {
+        height: 45vh;
+    }
+    .divider-edge {
+        height: 4.5rem;
+    }
+    .mod-hero-bottom {
+        .container {
+            text-align: center;
+            padding: 10rem 5.5rem 6rem 5.5rem;
+        }
+    }
+}
+
+

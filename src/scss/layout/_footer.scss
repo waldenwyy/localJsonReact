@@ -1,0 +1,167 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.mod-toTop {
+    display: none;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: -2rem;
+    width: 20%;
+    z-index: 4;
+
+    .fa {
+        font-size: 3rem;
+        color: $default-color-1;
+        background-color: $primary-color-2;
+        border: 0.1rem solid $default-color-1;
+        border-radius: 50%;
+        padding: 0.5rem 1.3rem 1rem;
+    }
+}
+
+footer {
+    position: relative;
+
+    
+
+    .connect {
+        &:before {
+            position: absolute;
+            content: "";
+            height: 0.1rem;
+            left: 0;
+            width: 100%;
+            background-color: $secondary-color-9;
+        }
+
+        .container {
+            padding: 4rem;
+            img {
+                width: 2.5rem;
+                padding-bottom: 0.7rem;
+                margin-right: 0.2rem;
+            }
+
+            h3 a {
+                color: $text-color-alt;
+                text-decoration: none;
+
+                &:hover {
+                    color: $text-color-hover;
+                }
+            }
+
+            .fa-angle-right {
+                padding: 0 0.5rem;
+            }
+
+            span {
+                display: block;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .nav {
+        nav {
+            font-size: 1.4rem;
+
+            .row {
+                margin-left: 0;
+            }
+
+            .col {
+                padding: 0;
+            }
+
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
+
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        li {
+            list-style: none;
+            padding: 0.4rem 0.6rem 0.4rem 0;
+
+            a {
+                color: $text-color;
+
+                &:hover {
+                    text-decoration: none;
+                    color: $text-color-alt;
+                }
+            }
+        }
+
+        img {
+            width: 20rem;
+            margin-top: 2rem;
+        }
+
+        a img {
+            width: 18rem;
+            margin-top: 0.8rem;
+        }
+    }
+
+    .copyright {
+        background-color: $primary-color-2;
+        text-align: center;
+
+        .container {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 1.5rem 0;
+            color: $default-color-1;
+            font-size: 1.2rem;
+        }
+
+        a {
+            color: $default-color-1;
+            font-weight: bold;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    footer {
+        .mod-toTop {
+            display: block;
+            outline: 0;
+            padding: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            line-height: 1;
+        }
+        .connect {
+            .container {
+                .row div {
+                    text-align: center;
+                    padding: 1.5rem 0;
+                }
+                img {
+                    width: 4rem;
+                    padding: 0 0.5rem;
+                }
+            }
+        }
+        .nav {
+            display: none;
+        }
+    }
+}

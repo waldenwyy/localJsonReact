@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+
+.container {
+    @include media-breakpoint-up(md) {
+        max-width: 90rem;
+    }
+}
+
+.navbar {
+    li {
+        font-size: 2rem;
+    }
+}

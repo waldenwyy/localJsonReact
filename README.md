@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Documentation
+
+## Environment
+
+This app is powered by NodeJS 10.16.0, lower versions of NodeJS may work but not recommended.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+## `npm i`
 
-Runs the app in the development mode.<br />
+Installs all dependencies to your local.
+
+Change the `url-loader` limit to 1000 in node_modules/react-scripts/config/webpack.config.js, or webpack will generate all small images into base64 format for efficiency.
+
+### `npm start`
+
+Runs the app in the development mode.
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
+The page will reload if you make edits.
+
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
+Builds the app for production to the `build` folder.
+
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
+The build is minified and the filenames include the hashes.
+
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## File Structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`src/assets` contains all react code to build the app.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- `src/assets/pages` contains all pages of the app which initialize the props and pass them to components.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `src/assets/components` contains all reusable parts of the app, they won't work on their own unless they are called and passed props by pages.
 
-## Learn More
+`src/scss/pages` contains all sass files for the site.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/scss/pages/_styleguide.scss` contains all sass code for styleguide only.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`src/App.js` contains routing setup and any new page needs to be registered here.
 
-### Code Splitting
+`public/index.html` is the shell of the app which contains all meta data and cdn for styleguide app.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+`public/img` contains all image files.
 
-### Analyzing the Bundle Size
+`public/CodeFiles` contains all code view files that will display when clicking on `view code` icon of the styleguide. It has both html and scss format.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

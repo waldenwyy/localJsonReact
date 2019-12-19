@@ -1,0 +1,50 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+/// Copy text color
+/// @type Color
+$text-color: #111111 !default;
+$text-color-alt: #001996 !default;
+$text-color-light: #ffffff !default;
+$text-color-hover: #0A38E6 !default;
+
+/// Default color
+/// @type Color
+$default-color-1:  #ffffff !default;
+
+/// Main brand color
+/// @type Color
+$primary-color-1:  #F00000 !default;
+$primary-color-2:  #001996 !default;
+
+/// Secondary color
+/// @type Color
+$secondary-color-1:  #00A9CE !default;
+$secondary-color-2:  #A2AAAD !default;
+$secondary-color-3:  #FFA300 !default;
+$secondary-color-4:  #FBDD40 !default;
+$secondary-color-5:  #64A70B !default;
+$secondary-color-6:  #C800A1 !default;
+$secondary-color-7:  #000000 !default;
+$secondary-color-8:  #F8C81E !default; // yellow button hover state
+$secondary-color-9:  #D3D3D3 !default; // light gray for drop shadow
+$secondary-color-10: #F5F6F6 !default; // light gray for bg
+$secondary-color-11: #495057 !default; // grey text
+$secondary-color-12: #C0C0C0 !default; // border grey
+$secondary-color-13: #F9F9F9 !default; // lighter gray for bg
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

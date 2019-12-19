@@ -1,0 +1,211 @@
+// -----------------------------------------------------------------------------
+// When having several themes, this file contains everything related to the
+// default one.
+// -----------------------------------------------------------------------------
+
+/* reusable module components */
+
+.mod-cta {
+    text-align: center;
+
+    &.type-blue {
+        background-color: $primary-color-2;
+        color: $default-color-1;
+    }
+
+    &.type-grey {
+        background-color: $secondary-color-10;
+        color: $text-color-alt;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 400;
+        line-height: 130%;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.mod-content-checklist {
+    background-image: url( '/img/content/content-home-logistics.jpg' );
+    background-position: center;
+    .container {
+        h2 {
+            padding-bottom: 2rem;
+        }
+    }
+    .type-light-overlay {
+        background: rgba(255,255,255,0.9);
+    }
+    .type-dark-overlay {
+        background: rgba(46,46,46,0.9);
+        color: $default-color-1;
+    }
+    .type-left-overlay {
+        padding: 8.5rem 5rem;
+        margin-bottom: 1rem;
+    }
+    .type-right-overlay {
+        padding: 5rem;
+        margin-top: 3.4rem;
+    }
+}
+
+.mod-two-column {
+    position: relative;
+    .container {
+        h2 {
+            color: $text-color-alt;
+            padding-bottom: 2rem;
+        }
+        i {
+            padding-right: 0.5rem;
+        }
+        a:not([role=button]) {
+            font-weight: 400;
+            color: $text-color-alt;
+            &:hover {
+                text-decoration: none;
+                color: $text-color-hover;
+            }
+        }
+    }
+    .type-left-column {
+        padding: 0 5rem 0 0;
+    }
+    .type-right-column {
+        padding: 0 0 0 5rem;
+    }
+    .type-imgbg-column {
+        background-image: url('/img/content/content-shipping-international.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.mod-three-column {
+    .container {
+        h2 {
+            color: $text-color-alt;
+            padding-bottom: 2rem;
+        }
+        h4 {
+            font-weight: 700;
+        }
+        a[role=button] {
+            text-align: center;
+            margin: 2rem 0 1.5rem 0;
+        }
+        a:not([role=button]) {
+            font-weight: 400;
+            color: $text-color-alt;
+            &:hover {
+                text-decoration: none;
+                color: $text-color-hover;
+            }
+        }
+        i {
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+.mod-three-column-symmetry {
+    text-align: center;
+    img {
+        height: 8rem;
+        margin-bottom: 1.7rem;
+    }
+    h4 {
+        font-weight: 700;
+    }
+}
+
+.mod-content-one-column {
+    .container {
+        h2 {
+            color: $text-color-alt;
+            padding-bottom: 2rem;
+        }
+        a:not([role=button]) {
+            font-weight: 400;
+            color: $text-color-alt;
+            &:hover {
+                text-decoration: none;
+                color: $text-color-hover;
+            }
+        }
+    }
+}
+
+.mod-three-column-list {
+    h2 {
+        color: $text-color-alt;
+        padding-bottom: 2rem;
+    }
+    li {
+        list-style: none;
+        margin-top: 2rem;
+    }
+    a:not([role=button]) {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $text-color-alt;
+        &:hover {
+            text-decoration: none;
+            color: $text-color-hover;
+        }
+    }
+}
+
+.mod-one-column {
+    background-color: $secondary-color-1;
+    color: $default-color-1;
+    p:first-child {
+        font-size: 2.4rem;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .mod-two-column {
+        .type-left-column {
+            padding: 0 2rem 4rem 2rem;
+        }
+        .type-right-column {
+            padding: 0 2rem;
+        }
+        .type-imgbg-column {
+            position: relative;
+            height: 50vh;
+        }
+    }
+    .mod-content-checklist {
+        .type-left-overlay {
+            padding: 4rem 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .type-right-overlay {
+            padding: 2.5rem;
+            margin-top: 2rem;
+        }
+    }
+    .mod-three-column {
+        [class^="col-md"] {
+            padding-bottom: 3.5rem;
+        }
+    }
+    .mod-three-column-list {
+        ul {
+            padding-inline-start: 0;
+        }
+    }
+}
